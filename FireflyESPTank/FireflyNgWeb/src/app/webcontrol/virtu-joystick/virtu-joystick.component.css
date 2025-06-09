@@ -1,0 +1,56 @@
+  .primebody {
+    height: 100%;
+    width: 100%;
+    background-color: #dedede;
+  }
+  
+  .space-top {
+    padding-top: 10px;
+  }
+  
+  #joystick {
+    height: 300px;
+    width: 300px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #608bc1;
+    font: 24px/300px Helvetica, Arial, sans-serif;
+    cursor: all-scroll;
+    user-select: none;
+    z-index: -100;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+
+
+  .appweb-card {
+    max-width: 400px;
+  }
+  
+
+mat-slider {
+  width: 100%;
+}
+
+appweb-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+  
+
+
+.mat-button-toggle-checked {
+  background-color: #97b5e5;
+}

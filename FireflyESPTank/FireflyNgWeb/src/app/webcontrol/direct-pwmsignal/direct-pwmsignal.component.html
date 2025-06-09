@@ -1,0 +1,44 @@
+<mat-card class="appweb-card">
+  <mat-card-actions>
+      <mat-button-toggle  [checked]="webmqtt.syncUpstreamToMQTT" 
+            (change)="webmqtt.syncUpstreamToMQTT = $event.source.checked">
+        <mat-icon>wifi_on</mat-icon>
+      </mat-button-toggle>
+      <mat-button-toggle  (change)="webmqtt.toggleHoldResumeMCUCommand($event)" >
+          <mat-icon>pause</mat-icon>
+        </mat-button-toggle>
+      <mat-button-toggle  (change)="resetDCSignalCommand()" >
+        <mat-icon>settings_backup_restore</mat-icon>
+      </mat-button-toggle>
+  </mat-card-actions>
+  <mat-card-content>
+      <section class="appweb-section">
+        DC Motor A
+      <mat-slider
+      max="1000"
+      min="-1000"
+      step="50"
+      thumbLabel="true"
+      [(ngModel)]="sliderAValue"
+      tickInterval="100"
+      >
+    </mat-slider>
+    DC Motor B
+    <mat-slider
+      max="1000"
+      min="-1000"
+      step="50"
+      [(ngModel)]="sliderBValue"
+      thumbLabel="true"
+      tickInterval="100"
+      >
+    </mat-slider>
+    
+    </section>
+
+    <p >{{mcuCommand}}</p>
+            <p >{{mcuFeedback}}</p>
+            Connected= {{this.webmqtt.syncUpstreamToMQTT}}
+            {{dcMotorA_PWMValue}} ]   [  {{dcMotorB_PWMValue}}
+  </mat-card-content>
+</mat-card>

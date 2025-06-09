@@ -1,0 +1,22 @@
+.mainWorkarea {
+    background-color: '#90a4ae';
+    padding:10px;
+}
+
+.app-toolbar{
+    background-image: url('/assets/fire_flying.jpg');
+}
+
+.app-toolbar-header-icon {
+    padding: 0 14px;
+    color: #e1efee;
+}
+
+.app-toolbar-button-icon {
+    padding: 0 14px;
+    color: #e1efee;
+}
+
+.app-toolbar-header-spacer {
+    flex: 1 1 auto;
+}

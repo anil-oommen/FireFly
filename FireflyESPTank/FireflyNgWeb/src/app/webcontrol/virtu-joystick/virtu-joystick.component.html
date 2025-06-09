@@ -1,0 +1,31 @@
+<mat-card class="appweb-card">
+  <mat-card-actions>
+      <mat-button-toggle [checked]="webmqtt.syncUpstreamToMQTT" 
+            (change)="webmqtt.syncUpstreamToMQTT = $event.source.checked">
+        <mat-icon >wifi_on</mat-icon>
+      </mat-button-toggle>
+  </mat-card-actions>
+  <mat-card-content>
+      <section class="appweb-section">
+        <div class="noselect" style="text-align:center">
+          <div class="container space-top">
+            <div class="center-align">
+              <canvas id="joystick" 
+                    (panstart)="onPanStart($event)"
+                    (panmove)="onPanMove($event)"
+                    (panend)="onPanEnd($event)"
+                  height="300" width="300">
+              </canvas>
+            </div>
+            <p >{{mcuCommand}}</p>
+            <p >{{mcuFeedback}}</p>
+            Connected= {{this.webmqtt.syncUpstreamToMQTT}}
+            <p>{{debugLine1}}</p>
+            <p>{{debugLine2}}</p>
+            <p>{{mcuSignature}}</p>
+          </div>
+        </div>
+    </section>
+  </mat-card-content>
+  
+</mat-card>

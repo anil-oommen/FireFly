@@ -1,0 +1,21 @@
+
+
+.appweb-card {
+  max-width: 400px;
+}
+  
+
+mat-slider {
+  width: 100%;
+}
+
+appweb-section {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 60px;
+}
+  
+.mat-button-toggle-checked {
+  background-color: #97b5e5;
+}

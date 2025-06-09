@@ -1,0 +1,17 @@
+<mat-toolbar  class="app-toolbar">
+  <mat-toolbar-row>
+     <span style="font-size: 1.5em;color: #F80">>Firefly</span>
+     <span class="app-toolbar-header-spacer"></span>
+   </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-tab-group >
+ <mat-tab label="Joystick"> 
+         <div class="mainWorkarea"><app-virtu-joystick></app-virtu-joystick> </div>
+ </mat-tab>
+ <mat-tab label="Direct PWM">
+         <div class="mainWorkarea"><app-direct-pwmsignal></app-direct-pwmsignal></div>
+ </mat-tab>
+</mat-tab-group>
+
+
